@@ -1,0 +1,29 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 100%;
+  z-index: 60;
+  background-color: transparent;
+  transition: all 0.3s;
+
+  // при  прокрутке
+  &__logo {
+    svg path {
+      transition: fill 0.3s;
+    }
+  }
+}
+
+.scroll {
+  .header {
+    background-color: var(--White);
+    color: var(--DarkBlue);
+    box-shadow: 0px 15px 30px rgba(70, 70, 70, 0.15);
+  }
+  .header__logo {
+    svg path {
+      fill: var(--DarkBlue);
+    }
+  }
+}

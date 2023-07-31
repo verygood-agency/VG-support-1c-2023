@@ -63,10 +63,19 @@
   font-weight: 700;
   font-style: normal;
 }
-
-
-
+// БЭМ блоки
 @import 'base/normalize';
 @import 'base/global';
-// @import 'bem/**/*';
-// @import 'section/**/*';
+@import 'bem/button';
+@import 'bem/lisr-reset';
+@import 'bem/title';
+@import 'bem/visually-hidden';
+@import 'bem/wrapper';
+// Логические секции
+@import 'section/header';
+@import 'section/first-screen';
+@import 'section/benefits';
+@import 'section/services-promo';
+@import 'section/price';
+@import 'section/faq';
+@import 'section/discuss-details';
