@@ -1,4 +1,36 @@
 .first-screen {
   background-color: var(--DarkBlue);
   color: var(--White);
+  background-image: url(../img/bg-first-screen.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .title {
+    font-size: 80px;
+    margin-bottom: 16px;
+    span {
+      color: var(--Green);
+    }
+  }
+  &__container {
+    max-width: 866px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  &__details {
+    margin: 0;
+    color: var(--white);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    opacity: 0.7;
+    margin-bottom: 35px;
+    span {
+      opacity: 1;
+      font-weight: 500;
+    }
+  }
 }
