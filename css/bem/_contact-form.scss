@@ -98,12 +98,13 @@
   @media (max-width: 1023px) {
     &__grid {
       grid-template-columns: repeat(1, 1fr);
+      gap: 0;
     }
     &__item {
       gap: 6px;
       grid-template-columns: 1fr;
       position: relative;
-      padding: 9px 0 18px;
+      padding: 12px 0 10px;
       &.mod {
         grid-column: initial;
       }

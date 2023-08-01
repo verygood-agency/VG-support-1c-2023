@@ -29,6 +29,7 @@
     }
   }
   @media (max-width: 767px) {
+    padding-bottom: 30px;
     &__list {
       grid-template-columns: repeat(2, 1fr);
       gap: 32px 16px;

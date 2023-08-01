@@ -26,6 +26,9 @@
     &__grid {
       grid-template-columns: 1fr;
     }
+    &__right {
+      margin-top: 0;
+    }
   }
   @media (max-width: 767px) {
     padding: 40px 0 50px;
