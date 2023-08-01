@@ -1,0 +1,52 @@
+.accordion {
+  padding: 22px 0 25px;
+  &__title {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 500;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr 24px;
+    position: relative;
+    align-items: center;
+    cursor: pointer;
+    &::after {
+      content: "";
+      display: flex;
+      width: 24px;
+      height: 12px;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='26' height='15' fill='none'%3e%3cpath stroke='%235B48FC' stroke-width='2' d='m1 1 12 12L25 1'/%3e%3c/svg%3e");
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: all 0.3s;
+    }
+  }
+  &__answer {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+    opacity: 0.8;
+    padding-left: 40px;
+    display: none;
+  }
+  &.active {
+    .accordion__title::after {
+      transform: rotate(180deg);
+    }
+    .accordion__answer {
+      display: block;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 14px 0 20px;
+    &__title {
+      font-size: 20px;
+    }
+    &__answer {
+      font-size: 16px;
+      padding: 0 20px;
+    }
+  }
+}

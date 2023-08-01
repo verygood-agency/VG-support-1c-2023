@@ -536,6 +536,58 @@ a {
   background-color: var(--DarkBlue);
 }
 
+.accordion {
+  padding: 22px 0 25px;
+}
+.accordion__title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 500;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr 24px;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+}
+.accordion__title::after {
+  content: "";
+  display: flex;
+  width: 24px;
+  height: 12px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='26' height='15' fill='none'%3e%3cpath stroke='%235B48FC' stroke-width='2' d='m1 1 12 12L25 1'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 0.3s;
+}
+.accordion__answer {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 300;
+  opacity: 0.8;
+  padding-left: 40px;
+  display: none;
+}
+.accordion.active .accordion__title::after {
+  transform: rotate(180deg);
+}
+.accordion.active .accordion__answer {
+  display: block;
+}
+@media (max-width: 767px) {
+  .accordion {
+    padding: 14px 0 20px;
+  }
+  .accordion__title {
+    font-size: 20px;
+  }
+  .accordion__answer {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -903,4 +955,45 @@ a {
     max-width: 100%;
     width: 100%;
   }
+}
+
+.faq__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.faq__item {
+  position: relative;
+}
+.faq__item::after {
+  content: "";
+  display: block;
+  opacity: 0.2;
+  background-color: var(--DarkBlue);
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 0.3s;
+}
+.faq__item::before {
+  content: "";
+  display: block;
+  opacity: 0.2;
+  background-color: var(--DarkBlue);
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 0.3s;
+}
+.faq__item + .faq__item {
+  margin-top: -1px;
+}
+.faq__item:hover::before, .faq__item:hover::after, .faq__item:active::before, .faq__item:active::after, .faq__item:focus::before, .faq__item:focus::after {
+  opacity: 1;
 }
