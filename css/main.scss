@@ -10,6 +10,7 @@
   --Green: #9DE311;
   --BluViolet: #5B48FC;
   --BluViolet2: #5f00e5;
+  --Crayola: #F2F6F9;
 
   --color2: #1E96C8;
   --color3: #43AD45;
@@ -72,6 +73,7 @@
 @import 'bem/title';
 @import 'bem/visually-hidden';
 @import 'bem/wrapper';
+@import 'bem/section';
 // Логические секции
 @import 'section/header';
 @import 'section/first-screen';

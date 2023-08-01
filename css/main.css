@@ -6,6 +6,7 @@
   --Green: #9DE311;
   --BluViolet: #5B48FC;
   --BluViolet2: #5f00e5;
+  --Crayola: #F2F6F9;
   --color2: #1E96C8;
   --color3: #43AD45;
 }
@@ -483,6 +484,27 @@ a {
   }
 }
 
+.section {
+  padding: 65px 0;
+}
+.section.DarkBlue {
+  background-color: var(--DarkBlue);
+  color: var(--White);
+}
+.section.BluViolet {
+  background-color: var(--BluViolet);
+  color: var(--White);
+}
+.section.Crayola {
+  background-color: var(--Crayola);
+}
+.section__grid {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 4fr 8fr;
+  align-items: flex-start;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -676,8 +698,6 @@ a {
 
 .benefits {
   padding: 35px 0 42px;
-  background-color: var(--BluViolet);
-  color: var(--White);
 }
 .benefits__list {
   display: grid;

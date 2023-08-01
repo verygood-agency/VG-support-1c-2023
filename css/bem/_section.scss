@@ -1,0 +1,22 @@
+.section {
+  padding: 65px 0;
+
+  &.DarkBlue {
+    background-color: var(--DarkBlue);
+    color: var(--White);
+  }
+  &.BluViolet {
+    background-color: var(--BluViolet);
+    color: var(--White);
+  }
+  &.Crayola {
+    background-color: var(--Crayola);
+  }
+
+  &__grid {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 4fr 8fr;
+    align-items: flex-start;
+  }
+}
