@@ -440,6 +440,11 @@ a {
 .button svg path {
   transition: all 0.3s;
 }
+@media (max-width: 1023px) {
+  .button {
+    padding: 23px 30px;
+  }
+}
 
 .list-reset {
   list-style: none;
@@ -471,6 +476,12 @@ a {
   margin: 0 auto;
   padding: 0 40px;
 }
+@media (max-width: 767px) {
+  .wrapper {
+    padding: 0 20px;
+    max-width: 100%;
+  }
+}
 
 .header {
   position: fixed;
@@ -488,6 +499,12 @@ a {
   grid-template-columns: 1fr auto;
   justify-content: space-between;
   align-items: center;
+}
+.header__logo {
+  max-width: 48px;
+}
+.header__logo a {
+  display: block;
 }
 .header__contacts {
   display: grid;
@@ -521,6 +538,42 @@ a {
 }
 .header__button.whatsapp {
   background-color: var(--color3);
+}
+@media (max-width: 1023px) {
+  .header__button {
+    grid-template-columns: 1fr;
+    padding: 12px;
+    align-items: center;
+    justify-content: center;
+  }
+  .header__button span {
+    display: none;
+  }
+  .header__contacts {
+    gap: 8px;
+  }
+  .header__tel {
+    margin-right: 8px;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    padding: 20px 0;
+  }
+  .header__grid {
+    gap: 8px;
+    grid-template-columns: 40px 1fr;
+  }
+  .header__logo {
+    max-width: initial;
+    height: 40px;
+  }
+  .header__logo svg {
+    scale: 0.8;
+  }
+  .header__button {
+    padding: 8px;
+  }
 }
 
 .scroll .header {
@@ -571,4 +624,52 @@ a {
 .first-screen__details span {
   opacity: 1;
   font-weight: 500;
+}
+@media (max-width: 1439px) {
+  .first-screen {
+    background-position: top right;
+  }
+  .first-screen__container {
+    max-width: 688px;
+    min-height: 560px;
+    padding: 133px 0 72px;
+  }
+  .first-screen .title {
+    font-size: 64px;
+  }
+}
+@media (max-width: 1023px) {
+  .first-screen .title {
+    font-size: 48px;
+  }
+  .first-screen__container {
+    max-width: 448px;
+    min-height: 504px;
+    padding: 131px 0 56px;
+  }
+  .first-screen__details {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .first-screen__container {
+    max-width: initial;
+    min-height: 570px;
+    padding: 80px 0 51px;
+    justify-content: flex-end;
+    text-align: center;
+  }
+  .first-screen .title {
+    font-size: 32px;
+    margin-bottom: 14px;
+  }
+  .first-screen__details {
+    margin-bottom: 23px;
+    font-size: 16px;
+  }
+  .first-screen .button {
+    padding: 19px 30px;
+    max-width: 100%;
+    width: 100%;
+  }
 }

@@ -33,4 +33,53 @@
       font-weight: 500;
     }
   }
+
+  @media (max-width: 1439px) {
+    background-position: top right;
+
+    &__container {
+      max-width: 688px;
+      min-height: 560px;
+      padding: 133px 0 72px;
+    }
+    .title {
+      font-size: 64px;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    .title {
+      font-size: 48px;
+    }
+    &__container {
+      max-width: 448px;
+      min-height: 504px;
+      padding: 131px 0 56px;
+    }
+    &__details {
+      margin-bottom: 25px;
+    }
+  }
+  @media (max-width: 767px) {
+    &__container {
+      max-width: initial;
+      min-height: 570px;
+      padding: 80px 0 51px;
+      justify-content: flex-end;
+      text-align: center;
+    }
+    .title {
+      font-size: 32px;
+      margin-bottom: 14px;
+    }
+    &__details {
+      margin-bottom: 23px;
+      font-size: 16px;
+    }
+    .button {
+      padding: 19px 30px;
+      max-width: 100%;
+      width: 100%;
+  }
+  }
 }

@@ -14,6 +14,12 @@
     justify-content: space-between;
     align-items: center;
   }
+  &__logo {
+    max-width: 48px;
+    a {
+      display: block;
+    }
+  }
   &__contacts {
     display: grid;
     gap: 16px;
@@ -49,6 +55,42 @@
     }
     &.whatsapp {
       background-color: var(--color3);
+    }
+  }
+
+  @media (max-width: 1023px) {
+    &__button {
+      grid-template-columns: 1fr;
+      padding: 12px;
+      align-items: center;
+      justify-content: center;
+      span {
+        display: none;
+      }
+    }
+    &__contacts {
+      gap: 8px;
+    }
+    &__tel {
+      margin-right: 8px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 20px 0;
+    &__grid {
+      gap: 8px;
+      grid-template-columns: 40px 1fr;
+  }
+    &__logo {
+      max-width: initial;
+      height: 40px;
+      svg {
+        scale: 0.8;
+      }
+    }
+    &__button {
+      padding: 8px;
     }
   }
 }

@@ -51,4 +51,8 @@
     transition: all 0.3s;
   }
 
+  @media (max-width: 1023px) {
+    padding: 23px 30px;
+  }
+
 }
