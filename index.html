@@ -469,31 +469,38 @@
                   <div class="contact-form__item mod">
                     <label for="user-name">Как вас зовут:</label>
                     <input type="text" name="input-name" id="user-name" placeholder="Ваше имя">
+                    <span class="indicator"></span>
                   </div>
                   <!-- поле ввода  -->
                   <div class="contact-form__item">
                     <label for="user-email">E-mail:</label>
                     <input type="email" name="input-email" id="user-email" placeholder="Электронная почта">
+                    <span class="indicator"></span>
                   </div>
                   <!-- поле ввода  -->
                   <div class="contact-form__item">
                     <label for="user-tel">Телефон:</label>
                     <input type="tel" name="input-tel" id="user-tel" placeholder="Ваш телефон">
+                    <span class="indicator"></span>
                   </div>
                   <!-- поле ввода  -->
                   <div class="contact-form__item">
                     <label for="user-text">Комментарий:</label>
-                    <textarea name="input-text" id="user-text" placeholder="Ваш комментарий"></textarea>
+                    <textarea name="input-text" id="user-text" placeholder="Ваш комментарий" rows='1'></textarea>
+                    <span class="indicator"></span>
                   </div>
+                </div>
+
+                <div class="contact-form__footer">
                   <!-- согласие  -->
-                  <div class="contact-form__item">
-                    <input type="checkbox" name="input-checkbox" id="user-checkbox">
-                    <label for="user-checkbox">Я выражаю <a href="#" target="_blank">согласие на обработку персональных
-                        данных</a></label>
+                  <div class="contact-form__item confurm">
+                    <input class="visually-hidden" type="checkbox" name="input-checkbox" id="user-checkbox" checked>
+                    <label for="user-checkbox">Я выражаю&nbsp;<a href="#" target="_blank">согласие на обработку
+                        персональных данных</a></label>
                   </div>
                   <!-- кнопка  -->
-                  <div class="contact-form__item">
-                    <button class="button" type="submit">
+                  <div class="contact-form__item clear">
+                    <button class="button btn-animate" type="submit">
                       <span>Отправить</span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" fill="none">
                         <path stroke="#fff" stroke-width="2" d="m1.5 13 6-6-6-6" />
