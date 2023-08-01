@@ -410,7 +410,7 @@ a {
   font-weight: 700;
   color: var(--White);
   background-color: var(--BluViolet);
-  padding: 18px 30px;
+  padding: 23px 31px;
   display: grid;
   grid-template-columns: 1fr 13px;
   gap: 16px;
@@ -441,9 +441,9 @@ a {
 .button svg path {
   transition: all 0.3s;
 }
-@media (max-width: 1023px) {
+@media (max-width: 767px) {
   .button {
-    padding: 23px 30px;
+    padding: 19px 30px;
   }
 }
 
@@ -513,6 +513,27 @@ a {
   .section__grid {
     grid-template-columns: 1fr;
   }
+}
+@media (max-width: 767px) {
+  .section {
+    padding: 40px 0 50px;
+  }
+}
+
+.decorate-border {
+  position: relative;
+  padding-bottom: 17px;
+}
+.decorate-border::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 48px;
+  height: 1px;
+  opacity: 0.2;
+  background-color: var(--DarkBlue);
 }
 
 .header {
@@ -700,7 +721,6 @@ a {
     font-size: 16px;
   }
   .first-screen .button {
-    padding: 19px 30px;
     max-width: 100%;
     width: 100%;
   }
@@ -805,5 +825,82 @@ a {
   }
   .services-promo__icon {
     margin-bottom: 20px;
+  }
+}
+
+.price__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 32px;
+  align-items: stretch;
+  grid-template-columns: repeat(2, 1fr);
+}
+.price__item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.price__icon {
+  height: 45px;
+  margin-bottom: 16px;
+}
+.price__icon svg {
+  height: 100%;
+}
+.price__name {
+  display: block;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.price__text {
+  display: block;
+  margin: 0;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  margin-bottom: 28px;
+}
+.price__label {
+  display: block;
+  margin: 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+  opacity: 0.5;
+  margin-top: auto;
+}
+.price__price {
+  display: block;
+  margin: 0;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 27px;
+}
+@media (max-width: 767px) {
+  .price__list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 42px;
+  }
+  .price__item {
+    height: initial;
+  }
+  .price__name {
+    font-size: 20px;
+  }
+  .price__text {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+  .price .button {
+    max-width: 100%;
+    width: 100%;
   }
 }

@@ -1,0 +1,15 @@
+.decorate-border {
+  position: relative;
+  padding-bottom: 17px;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 48px;
+    height: 1px;
+    opacity: 0.2;
+    background-color: var(--DarkBlue);
+  }
+}
