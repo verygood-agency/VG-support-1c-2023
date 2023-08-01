@@ -16,8 +16,19 @@
   }
   &__logo {
     max-width: 48px;
+
+    svg path {
+      transition: all 0.3s;
+    }
+
     a {
       display: block;
+
+      &:hover {
+        svg path {
+          fill: #E32B17;
+        }
+      }
     }
   }
   &__contacts {

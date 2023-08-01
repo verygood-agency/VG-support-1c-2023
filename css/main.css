@@ -824,8 +824,14 @@ input[type=checkbox]:checked + label::after {
 .header__logo {
   max-width: 48px;
 }
+.header__logo svg path {
+  transition: all 0.3s;
+}
 .header__logo a {
   display: block;
+}
+.header__logo a:hover svg path {
+  fill: #E32B17;
 }
 .header__contacts {
   display: grid;
