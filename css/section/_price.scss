@@ -15,7 +15,7 @@
   }
   &__icon {
     height: 45px;
-    margin-bottom: 16px;
+    margin-bottom: 19px;
     svg {
       height: 100%;
     }
@@ -34,7 +34,7 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 300;
-    margin-bottom: 28px;
+    margin-bottom: 19px;
   }
   &__label {
     display: block;
@@ -45,6 +45,7 @@
     line-height: 1.4;
     opacity: 0.5;
     margin-top: auto;
+    margin-bottom: 2px;
   }
   &__price {
     display: block;

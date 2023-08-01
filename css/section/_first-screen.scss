@@ -7,7 +7,8 @@
   background-position: center;
   .title {
     font-size: 80px;
-    margin-bottom: 16px;
+    line-height: 1.15;
+    margin-bottom: 10px;
     span {
       color: var(--Green);
     }
@@ -19,6 +20,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    padding: 190px 0 224px;
   }
   &__details {
     margin: 0;
@@ -44,6 +46,7 @@
     }
     .title {
       font-size: 64px;
+      line-height: 1.25;
     }
   }
 

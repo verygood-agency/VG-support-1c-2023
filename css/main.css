@@ -478,7 +478,7 @@ a {
 }
 
 .wrapper {
-  max-width: 1440px;
+  max-width: 1584px;
   margin: 0 auto;
   padding: 0 40px;
 }
@@ -490,7 +490,7 @@ a {
 }
 
 .section {
-  padding: 65px 0;
+  padding: 65px 0 69px;
 }
 .section.DarkBlue {
   background-color: var(--DarkBlue);
@@ -508,6 +508,9 @@ a {
   gap: 32px;
   grid-template-columns: 4fr 8fr;
   align-items: flex-start;
+}
+.section__right {
+  margin-top: 18px;
 }
 @media (max-width: 1200px) {
   .section__grid {
@@ -537,7 +540,7 @@ a {
 }
 
 .accordion {
-  padding: 22px 0 25px;
+  padding: 23px 0 26px;
 }
 .accordion__title {
   margin: 0;
@@ -590,7 +593,7 @@ a {
 
 .contact-form__grid {
   display: grid;
-  gap: 0 32px;
+  gap: 22px 32px;
   grid-template-columns: repeat(2, 1fr);
 }
 .contact-form__item {
@@ -603,6 +606,18 @@ a {
 }
 .contact-form__item.mod {
   grid-column: 1/-1;
+}
+.contact-form__grid .contact-form__item:first-of-type::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  opacity: 0.2;
+  background-color: var(--White);
+  left: 0;
+  right: 0;
+  top: 0;
 }
 .contact-form .indicator {
   display: block;
@@ -648,7 +663,7 @@ a {
   height: 3px;
 }
 .contact-form__footer {
-  margin-top: 20px;
+  margin-top: 32px;
   display: grid;
   gap: 32px;
   grid-template-columns: 6fr 1fr;
@@ -901,7 +916,8 @@ input[type=checkbox]:checked + label::after {
 }
 .first-screen .title {
   font-size: 80px;
-  margin-bottom: 16px;
+  line-height: 1.15;
+  margin-bottom: 10px;
 }
 .first-screen .title span {
   color: var(--Green);
@@ -913,6 +929,7 @@ input[type=checkbox]:checked + label::after {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  padding: 190px 0 224px;
 }
 .first-screen__details {
   margin: 0;
@@ -938,6 +955,7 @@ input[type=checkbox]:checked + label::after {
   }
   .first-screen .title {
     font-size: 64px;
+    line-height: 1.25;
   }
 }
 @media (max-width: 1023px) {
@@ -976,7 +994,7 @@ input[type=checkbox]:checked + label::after {
 }
 
 .benefits {
-  padding: 35px 0 42px;
+  padding: 38px 0 43px;
 }
 .benefits__list {
   display: grid;
@@ -1008,7 +1026,7 @@ input[type=checkbox]:checked + label::after {
   vertical-align: baseline;
   text-align: center;
   color: inherit;
-  margin-bottom: 7px;
+  margin-bottom: 11px;
 }
 .benefits__item.mod {
   font-size: 20px;
@@ -1041,7 +1059,7 @@ input[type=checkbox]:checked + label::after {
   margin: 0;
   list-style: none;
   display: grid;
-  gap: 54px 32px;
+  gap: 50px 32px;
   grid-template-columns: repeat(4, 1fr);
 }
 .services-promo__item {
@@ -1054,7 +1072,7 @@ input[type=checkbox]:checked + label::after {
 }
 .services-promo__icon {
   height: 48px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 .services-promo__icon svg {
   height: 100%;
@@ -1093,7 +1111,7 @@ input[type=checkbox]:checked + label::after {
 }
 .price__icon {
   height: 45px;
-  margin-bottom: 16px;
+  margin-bottom: 19px;
 }
 .price__icon svg {
   height: 100%;
@@ -1112,7 +1130,7 @@ input[type=checkbox]:checked + label::after {
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
-  margin-bottom: 28px;
+  margin-bottom: 19px;
 }
 .price__label {
   display: block;
@@ -1123,6 +1141,7 @@ input[type=checkbox]:checked + label::after {
   line-height: 1.4;
   opacity: 0.5;
   margin-top: auto;
+  margin-bottom: 2px;
 }
 .price__price {
   display: block;

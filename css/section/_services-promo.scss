@@ -4,7 +4,7 @@
     margin: 0;
     list-style: none;
     display: grid;
-    gap: 54px 32px;
+    gap: 50px 32px;
     grid-template-columns: repeat(4, 1fr);
   }
   &__item {
@@ -17,7 +17,7 @@
   }
   &__icon {
     height: 48px;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     svg {
       height: 100%;
     }
