@@ -19,4 +19,9 @@
     grid-template-columns: 4fr 8fr;
     align-items: flex-start;
   }
+  @media (max-width: 1200px) {
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+  }
 }
